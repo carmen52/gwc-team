@@ -1,0 +1,286 @@
+.second-color {
+  color:#c7d2db; 
+}
+
+.dark-background {
+  background: #222;
+}
+
+body {
+  height: 100%;
+}
+
+.App {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #c7d2db;
+  height:100%;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+  background: #c7d2db;
+  border:none;
+}
+
+.orange {
+  color:#bf4d28;
+}
+
+button:hover {
+  background:#bf4d28;
+  color: #c7d2db;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.square {
+  width:15%;
+  height:40px;
+  margin-left:10px;
+  margin-right:0px;
+  font-size:18px;
+}
+
+.tab-row {
+  margin-right: 0px; 
+  padding-right: 0px;
+  float: right;
+  width: 60%;
+}
+
+.mainpage-coverphoto {
+  width: 240px;
+  height:400px;
+}
+
+.cover {
+  background-image: url('./cover_photo.jpg');
+  background-size: 100%; 
+  width:1000px;
+  height:600px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.covertext {
+  display:inline-block;
+  background-color: #222;
+  color:#63a6e1; 
+  width:40%;
+  height:80%;
+  margin-left:-550px; 
+  margin-right:auto;
+  margin-top:50px;
+  margin-bottom:auto;
+  font-size:70px;
+}
+
+.covertext-sub {
+  padding:20px;
+  font-size:20px;
+  color:#c7d2db;
+}
+
+.h1 {
+  padding: 15px;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold; 
+}
+
+.About {
+  width:1000px;
+  margin: 15px; 
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  background:#222;
+  color: #63a6e1;
+}
+
+.About-paragraph {
+  padding: 30px; 
+  padding-top: 0px; 
+  margin: 0 30px; 
+  font-size: 18px;
+  text-align: center;
+}
+
+.about-element {
+  width: 33%;
+  float: left;
+}
+
+.location-date-time{
+  font-size: 20px;
+  margin: 0 auto; 
+  display: inline-block;
+  width: 100%;
+}
+
+.about-item-text {
+  padding-right: 50px; 
+}
+
+.about-text {
+  margin: 0 80px; 
+  padding-bottom: 15px;
+}
+
+.about-item {
+  height:40px; 
+  width:40px;
+  padding-right:15px;
+  padding-bottom:0px;
+  padding-top: 0px;
+  vertical-align:middle;
+}
+
+.Contact.About {
+  text-align: center;
+  padding-top: 10; 
+  padding-bottom: 10px; 
+}
+
+.contact-items {
+  display: inline-block;
+  margin:0 auto 0 auto; 
+  text-align:center;
+  align-content: center;
+  width: 92%;
+}
+
+.contactitem{
+  float:left;
+  padding-left: 30px;
+  padding-right: 30px; 
+  padding-bottom: 30px; 
+  width: 10%;
+}
+
+.element { 
+  width: 100px; 
+  height: 100px;
+  border-radius: 10px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 40px;
+  padding: 20px;
+  padding-right: 0px;
+  color: white;
+}
+
+.left-header {
+  display: inline-block;
+  margin-top: -15px;
+}
+
+.logo {
+  vertical-align:middle;
+}
+
+.title {
+  color: #bf4d28;
+  margin-left: 50px; 
+  font-size: 18px;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+.footer {
+  padding: 15px;
+  font-size: 18px; 
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+.column {
+  display:flex;
+  flex-direction:column;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.footer-name {
+  display: block;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.block {
+  display:block; 
+}
+
+.block.footermark {
+  padding-left: 15px; 
+}
+
+.contactitem.small {
+  padding: 10px;
+  display: inline-block;
+  width: 30%;
+}
+
+.footerlogo{
+  width: 300px; 
+  padding:15px;
+  padding-left: 0px;
+  
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+.Team-Header {
+  font-size: 70px; 
+  text-align: center;
+  padding: 10px;
+}
+
+.Person {
+  width: 30%;
+  margin: 20px;
+  padding: 10px;
+  display: block;
+}
+
+.person-item {
+  text-align:center;
+}
+
+.person-contact-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.person-contact-item {
+  float: left;
+  padding: 10px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
