@@ -54,11 +54,11 @@ class App extends Component {
         <div className="People">
           <Person name="Victoria Plange" title="President" pic={person_1} git="github.com/carmen52" 
                   email="beckwith.l@husky.neu.edu" link="test"/>
-          <Person name="Deesha Shah" title="Web Chair" pic={person_1} git="github.com/carmen52" 
+          <Person name="Deesha Shah" title="Web Chair" pic={person_2} git="github.com/carmen52" 
                   email="beckwith.l@husky.neu.edu" link="test"/>
-          <Person name="Han Fu" title="Treasurer" pic={person_1} git="github.com/carmen52" 
+          <Person name="Han Fu" title="Treasurer" pic={person_3} git="github.com/carmen52" 
                   email="beckwith.l@husky.neu.edu" link="test"/>
-          <Person name="Kamala Nayana" title="Vice President" pic={person_1} git="github.com/carmen52" 
+          <Person name="Kamala Nayana" title="Vice President" pic={person_4} git="github.com/carmen52" 
                   email="beckwith.l@husky.neu.edu" link="test"/>
           <Person name="Dean Doreen Hodgkin" title="Mentor" pic={hodgkin} git="" 
                   email="beckwith.l@husky.neu.edu" link=""/>
