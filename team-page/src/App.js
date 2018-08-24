@@ -16,7 +16,14 @@ import ccis from './ccis.png';
 import person_email from './person_email.png';
 import person_git from './person_git.png';
 import person_linkedin from './person_linkedin.png';
-import person_1 from './person_1.jpg';
+import plange from './plange.jpeg';
+import vyas from './vyas.jpg'
+import phadate from './phadate.png'
+import sriramaneni from './sriramaneni.jpg'
+import bilurkar from './bilurkar.jpg'
+import shah from './shah.jpeg'
+import gupta from './gupta.jpg'
+import yella from './yella.jpg'
 import person_2 from './person_2.jpg';
 import person_3 from './person_3.jpg';
 import person_4 from './person_4.jpg';
@@ -52,20 +59,28 @@ class App extends Component {
           <img className="coverphototeam" src={coverphoto_team} alt="cover photo of team" hidden={this.state.hidePhoto} />
         </div>
         <div className="People">
-          <Person name="Victoria Plange" title="President" pic={person_1} git="github.com/carmen52" 
-                  email="beckwith.l@husky.neu.edu" link="test"/>
-          <Person name="Deesha Shah" title="Web Chair" pic={person_2} git="github.com/carmen52" 
-                  email="beckwith.l@husky.neu.edu" link="test"/>
-          <Person name="Han Fu" title="Treasurer" pic={person_3} git="github.com/carmen52" 
-                  email="beckwith.l@husky.neu.edu" link="test"/>
-          <Person name="Kamala Nayana" title="Vice President" pic={person_4} git="github.com/carmen52" 
-                  email="beckwith.l@husky.neu.edu" link="test"/>
+          <Person name="Victoria Plange" title="President" pic={plange} git="" 
+                  email="" link="plange"/>
+          <Person name="Namrata Bilurkar" title="Vice President" pic={bilurkar} git="" 
+                  email="" link=" https://www.linkedin.com/in/namratabilurkar"/>
+          <Person name="Anubhuti Vyas" title="Secretary" pic={vyas} git="" 
+                  email="" link="https://www.linkedin.com/in/anubhutivyas/"/>
+          <Person name="Sravya Yella" title="Treasurer" pic={yella} git="" 
+                  email="" link="https://www.linkedin.com/in/sravyayella/"/>
+          <Person name="Dhanisha Phadate" title="Public Relations I" pic={phadate} git="" 
+                  email="" link="https://www.linkedin.com/in/dhanisha-phadate"/>
+          <Person name="Pujitha Srimameni" title="Public Relations II" pic={sriramaneni} git="" 
+                  email="" link="https://www.linkedin.com/in/pujitha-sriramaneni/"/>
+          <Person name="Deesha Shah" title="Web Design I" pic={shah} git="" 
+                  email="" link="https://www.linkedin.com/in/deeshashah/"/>
+          <Person name=" Ritika Gupta" title="Web Design II" pic={gupta} git="" 
+                  email="" link="https://www.linkedin.com/in/rtkgupta/"/>
           <Person name="Dean Doreen Hodgkin" title="Mentor" pic={hodgkin} git="" 
-                  email="beckwith.l@husky.neu.edu" link=""/>
+                  email="" link=""/>
           <Person name="Kathi Vander Laan" title="Advisor" pic={vander_laan} git="" 
-                  email="beckwith.l@husky.neu.edu" link=""/>
+                  email="" link=""/>
           <Person name="Nada Aladdin Jamel" title="Advisor" pic={jamel} git="" 
-                  email="beckwith.l@husky.neu.edu" link=""/>
+                  email="" link=""/>
         </div>
         <Footer/>
       </div>
