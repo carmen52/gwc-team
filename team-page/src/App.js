@@ -1,36 +1,37 @@
 import React, { Component, ReactComponent } from 'react';
-import coverphoto from './cover_photo.jpg';
-import coverphoto_team from './cover_photo_team.jpg';
-import facebook from './fb.png';
-import email from './email.png';
-import hackpad from './hackpad.png';
-import git from './git.svg';
-import twitter from './twitter.png';
-import instagram from './instagram.png';
-import logo from './gwc.png';
-import neu from './neu.png';
-import calendar from './calendar.png';
-import clock from './clock.png';
-import location from './location.png';
-import ccis from './ccis.png';
+import coverphoto from './common/cover_photo.jpg';
+import facebook from './common/fb.png';
+import email from './common/email.png';
+import hackpad from './common/hackpad.png';
+import git from './common/git.svg';
+import twitter from './common/twitter.png';
+import instagram from './common/instagram.png';
+import logo from './common/gwc.png';
+import neu from './common/neu.png';
+import calendar from './common/calendar.png';
+import clock from './common/clock.png';
+import location from './common/location.png';
+import ccis from './common/ccis.png';
+import bullet from './common/bulletpoint.png'
+
 import person_email from './person_email.png';
 import person_git from './person_git.png';
 import person_linkedin from './person_linkedin.png';
-import plange from './plange.jpeg';
-import vyas from './vyas.jpg'
-import phadate from './phadate.png'
-import sriramaneni from './sriramaneni.jpg'
-import bilurkar from './bilurkar.jpg'
-import shah from './shah.jpeg'
-import gupta from './gupta.jpg'
-import yella from './yella.jpg'
-import person_2 from './person_2.jpg';
-import person_3 from './person_3.jpg';
-import person_4 from './person_4.jpg';
-import vander_laan from './vander_laan.jpg';
-import jamel from './jamel.jpg';
-import hodgkin from './hodgkin.jpg';
+import plange from './team_photos/plange.jpeg';
+import vyas from './team_photos/vyas.jpg'
+import phadate from './team_photos/phadate.png'
+import sriramaneni from './team_photos/sriramaneni.jpg'
+import bilurkar from './team_photos/bilurkar.jpg'
+import shah from './team_photos/shah.jpeg'
+import gupta from './team_photos/gupta.jpg'
+import yella from './team_photos/yella.jpg'
+import vander_laan from './team_photos/vander_laan.jpg';
+import jamel from './team_photos/jamel.jpg';
+import hodgkin from './team_photos/hodgkin.jpg';
+
 import './App.css';
+import './common/header.css';
+import {Header, Footer} from './common/header.js'
 
 class App extends Component {
   constructor(props) {
@@ -56,139 +57,34 @@ class App extends Component {
           <div className="team-cover-text" onMouseOver={this.hoverOn} onMouseOut={this.hoverOff}>
           Meet the GWC Team
           </div>
-          <img className="coverphototeam" src={coverphoto_team} alt="cover photo of team" hidden={this.state.hidePhoto} />
         </div>
         <div className="People">
           <Person name="Victoria Plange" title="President" pic={plange} git="" 
-                  email="" link="plange"/>
+                  email="plange.v@husky.neu.edu" link="https://www.linkedin.com/in/victoria-sarah-plange"/>
           <Person name="Namrata Bilurkar" title="Vice President" pic={bilurkar} git="" 
-                  email="" link=" https://www.linkedin.com/in/namratabilurkar"/>
+                  email="bilurkar.n@husky.neu.edu" link=" https://www.linkedin.com/in/namratabilurkar"/>
           <Person name="Anubhuti Vyas" title="Secretary" pic={vyas} git="" 
-                  email="" link="https://www.linkedin.com/in/anubhutivyas/"/>
+                  email="vyas.an@husky.neu.edu" link="https://www.linkedin.com/in/anubhutivyas/"/>
           <Person name="Sravya Yella" title="Treasurer" pic={yella} git="" 
-                  email="" link="https://www.linkedin.com/in/sravyayella/"/>
+                  email="yella.sr@husky.neu.edu" link="https://www.linkedin.com/in/sravyayella/"/>
           <Person name="Dhanisha Phadate" title="Public Relations I" pic={phadate} git="" 
-                  email="" link="https://www.linkedin.com/in/dhanisha-phadate"/>
+                  email="phadate.d@husky.neu.edu" link="https://www.linkedin.com/in/dhanisha-phadate"/>
           <Person name="Pujitha Srimameni" title="Public Relations II" pic={sriramaneni} git="" 
-                  email="" link="https://www.linkedin.com/in/pujitha-sriramaneni/"/>
+                  email="sriramaneni.p@husky.neu.edu" link="https://www.linkedin.com/in/pujitha-sriramaneni/"/>
           <Person name="Deesha Shah" title="Web Design I" pic={shah} git="" 
                   email="" link="https://www.linkedin.com/in/deeshashah/"/>
-          <Person name=" Ritika Gupta" title="Web Design II" pic={gupta} git="" 
-                  email="" link="https://www.linkedin.com/in/rtkgupta/"/>
+          <Person name="Ritika Gupta" title="Web Design II" pic={gupta} git="" 
+                  email="gupta.ritika@husky.neu.edu" link="https://www.linkedin.com/in/rtkgupta/"/>
           <Person name="Dean Doreen Hodgkin" title="Mentor" pic={hodgkin} git="" 
-                  email="" link=""/>
+                  email="d.hodgkin@northeastern.edu" link=""/>
           <Person name="Kathi Vander Laan" title="Advisor" pic={vander_laan} git="" 
-                  email="" link=""/>
+                  email="k.vanderlaan@neu.edu" link=""/>
           <Person name="Nada Aladdin Jamel" title="Advisor" pic={jamel} git="" 
-                  email="" link=""/>
+                  email="n.naji@northeastern.edu" link=""/>
         </div>
         <Footer/>
       </div>
     );
-  }
-}
-
-// Tab item
-class Square extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = { value:this.props.text, showText:true, color:'#afcaff'}
-    this.hoverOn= this.hoverOn.bind(this)
-    this.hoverOff= this.hoverOff.bind(this)
- 
-    this.color 
-  }
-
-  render() {
-    return (
-      <button className="square" 
-        onClick={this.props.click}
-        onMouseOver={this.hoverOn} onMouseOut={this.hoverOff} >
-        <div>
-            <div >
-                {this.state.value} 
-            </div>
-        </div>
-      </button>
-    );
-  }
-
-  hoverOn() {
-    this.setState({ value: this.props.text, showText:true, color:"#080350"});
-  }
-
-  hoverOff() {
-    this.setState({ value: this.props.text, showText:false, color:"#fff"});
-  }
-}
-
-
-// Homepage Header
-class Header extends Component {
-
-  constructor(props) {
-    super(props);
-    this.Contact = React.createRef();
-  }
-
-  onPeopleClick() {}
-
-  onContactClick() {
-  }
-
-  render() {
-    return (
-      <div className="App-header">
-
-        <div className="left-header" >
-          <img className="logo" src={logo} height="70px" width="110px" alt="homepage logo" />
-          <span className="title" >
-            supporting and engaging women in tech
-          </span>
-        </div>
-         <div className="tab-row">
-          <Square text="contact" click={this.onContactClick} />
-          <Square text="team" click={this.onPeopleClick} />
-          <Square text="events" click={this.onPeopleClick} />
-          <Square text="blog" click={this.onPeopleClick} />
-          <Square text="job postings" click={this.onPeopleClick} />
-          <Square text="gallery" click={this.onPeopleClick} />
-         </div>
-      </div> 
-    );
-  }
-}
-
-class Footer extends Component {
-  render() {
-    return(
-      <div className="footer second-color dark-background">
-        <div className="footer-events column" >
-          <span className="orange" > Upcoming Events </span>
-
-        </div>
-        <div className="footer-name column orange">
-          <span className="block footermark" > © NU Grad Women Coders 2018 </span>
-          <img className="footerlogo block" src={ccis} alt="ccis logo" />
-        </div>
-        <div className="footer-contact column">
-          <span className="orange" > Contact Us </span>
-          <div className="footercontact" display="inline-block">
-            <div className="contactitem small">
-              <a href="mailto:nugradwomencoders@gmail.com"> 
-                    <img className="" src={email} height="40px" width="40px" float="left" alt="email link"/>
-              </a>
-            </div>
-            <div className="contactitem small">
-              <a href="https://www.facebook.com/groups/GradWomenCoders/"> 
-                    <img className="" src={facebook} height="40px" width="40px" float="left" alt="facebook link"/>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    ); 
   }
 }
 

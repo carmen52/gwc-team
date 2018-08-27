@@ -36,33 +36,13 @@ button:hover {
   color: #c7d2db;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.square {
-  width:15%;
-  height:40px;
-  margin-left:10px;
-  margin-right:0px;
-  font-size:18px;
-}
-
-.tab-row {
-  margin-right: 0px; 
-  padding-right: 0px;
-  float: right;
-  width: 60%;
-}
-
 .mainpage-coverphoto {
   width: 240px;
   height:400px;
 }
 
 .cover {
-  background-image: url('./cover_photo.jpg');
+  background-image: url('./common/cover_photo.jpg');
   background-size: 100%; 
   width:1000px;
   height:600px;
@@ -175,19 +155,6 @@ button:hover {
   border-radius: 10px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 40px;
-  padding: 20px;
-  padding-right: 0px;
-  color: white;
-}
-
-.left-header {
-  display: inline-block;
-  margin-top: -15px;
-}
-
 .logo {
   vertical-align:middle;
 }
@@ -198,14 +165,6 @@ button:hover {
   font-size: 18px;
   vertical-align: middle;
   padding-top: 5px;
-}
-
-.footer {
-  padding: 15px;
-  font-size: 18px; 
-  display:flex;
-  flex-direction:row;
-  justify-content: space-around;
 }
 
 .column {
@@ -347,7 +306,6 @@ button:hover {
 }
 
 .Team-Header {
-  background-image: url('./cover_photo_team.jpg');
   background-size: 100%; 
   width:940px;
   height:600px;

@@ -1,0 +1,43 @@
+
+
+.App-header {
+  height: 40px;
+  padding: 20px;
+  padding-right: 0px;
+  color: white;
+  background-color: white;
+  border-bottom: solid 2px #63a6e1; 
+}
+
+.footer {
+  padding: 15px;
+  font-size: 18px; 
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  background-color: white;
+  border-top: solid 2px #63a6e1; 
+
+}
+
+.square {
+  width:13%;
+  height:40px;
+  margin-left:10px;
+  margin-right:0px;
+  font-size:16px;
+}
+
+.tab-row {
+  margin-right: 0px; 
+  padding-right: 10px;
+  float: right;
+  width: 60%;
+}
+
+.left-header {
+  display: inline-block;
+  margin-top: -15px;
+}
+
+
