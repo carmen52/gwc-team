@@ -1,15 +1,23 @@
 
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 130px;
+  min-height: 100%;
+}
 
 .App-header {
-  height: 40px;
+  height: 40px; 
   padding: 20px;
   padding-right: 0px;
   color: white;
   background-color: white;
   border-bottom: solid 2px #63a6e1; 
+  width: 100%; 
 }
 
 .footer {
+  height: 100px;
   padding: 15px;
   font-size: 18px; 
   display:flex;
@@ -17,7 +25,46 @@
   justify-content: space-around;
   background-color: white;
   border-top: solid 2px #63a6e1; 
+  width: 100%; 
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
+.footer-name {
+  display: block;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.block.footermark {
+  margin: 0 auto; 
+}
+
+a {
+  text-decoration: none;
+}
+
+.footerlogo{
+  width: 100%; 
+  padding:15px;
+}
+
+.column {
+  display:flex;
+  flex-direction:column;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.block {
+  display:block; 
+  margin: 0 auto; 
 }
 
 .square {
@@ -25,19 +72,98 @@
   height:40px;
   margin-left:10px;
   margin-right:0px;
-  font-size:16px;
+  font-size:15px;
 }
 
 .tab-row {
   margin-right: 0px; 
-  padding-right: 10px;
+  padding-right: 30px;
   float: right;
-  width: 60%;
+  vertical-align: middle;
+  width: 60%; 
+}
+
+.title {
+  color: #bf4d28;
+  margin-left: 15px; 
+  font-size: 18px;
+  vertical-align: middle;
+  padding-top: 10px;
+  float:left;
+  visibility: visible;
 }
 
 .left-header {
-  display: inline-block;
+  margin:0; 
+  padding:0; 
+  float: left;
   margin-top: -15px;
+  max-width: 110px; 
+}
+
+.logo {
+  width:100%; 
+  vertical-align: middle; 
+  max-height: 70px; 
+}
+
+.no-upcoming-events {
+  padding: 20px; 
+  font-size: 15px; 
+  color: rgb(97, 96, 96); 
+}
+
+@media only screen and (max-width: 1350px) {
+  .title {
+    visibility: hidden;
+    height: 0px; 
+  }
+
+  .tab-row {
+ 
+  
+    width: 88%;
+  }
+
+  .square {
+    font-size: 13px;
+  }
+
+  .left-header {
+    width: 8%
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .square {
+    font-size: 12px;
+    margin-left: 5px; 
+  }
+
+  .tab-row {
+ 
+  
+    width: 87%;
+  }
+
+  .footer { 
+    font-size: 12px; 
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .left-header {
+    visibility: hidden; 
+    width: 0px; 
+  }
+
+  .tab-row {
+ 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    width: 100%;
+  }
 }
 
 

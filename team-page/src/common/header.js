@@ -84,14 +84,13 @@ class Square extends React.Component {
     render() {
       return (
         <div className="App-header">
-  
-          <div className="left-header" >
-            <img className="logo" src={logo} height="70px" width="110px" alt="homepage logo" />
-            <span className="title" >
-              supporting and engaging women in tech
-            </span>
+          <div className="left-header header-el" >
+            <img className="logo" src={logo} alt="homepage logo" />
           </div>
-           <div className="tab-row">
+          <div id="title" className="title header-el" >
+              supporting and engaging women in tech
+          </div>
+           <div className="tab-row header-el ">
             <Square text="home" click={this.onHomeClick} />
             <Square text="contact" click={this.onContactClick} />
             <Square text="team" click={this.onTeamClick} />
@@ -111,8 +110,8 @@ export class Footer extends React.Component {
       return(
         <div className="footer second-color">
           <div className="footer-events column" >
-            <span className="orange" > Upcoming Events </span>
-  
+            <a href="https://www.facebook.com/groups/GradWomenCoders" className="orange" > Upcoming Events </a>
+            <span className="no-upcoming-events" hidden={false}> Check back soon! </span>
           </div>
           <div className="footer-name column orange">
             <span className="block footermark" > © NU Grad Women Coders 2018 </span>
