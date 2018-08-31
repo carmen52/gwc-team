@@ -93,6 +93,16 @@ a {
   visibility: visible;
 }
 
+.title-mobile {
+  color: #63a6e1;
+  font-size: 18px;
+  vertical-align: middle;
+  float:middle;
+  visibility: hidden;
+  height:0px; 
+  width: 0px; 
+}
+
 .left-header {
   margin:0; 
   padding:0; 
@@ -138,11 +148,10 @@ a {
   .square {
     font-size: 12px;
     margin-left: 5px; 
+    height: 25px; 
   }
 
   .tab-row {
- 
-  
     width: 87%;
   }
 
@@ -158,11 +167,42 @@ a {
     width: 0px; 
   }
 
+  .title-mobile {
+    visibility: visible;
+    width: 100%;  
+    height: 15px; 
+    margin-top: 0px; 
+    padding-bottom: 10px; 
+  }
+
   .tab-row {
- 
     padding-left: 20px; 
     padding-right: 20px; 
     width: 100%;
+  }
+
+  .App-header {
+    height: 90px; 
+  }
+
+  .square {
+    width: 20%; 
+    margin-bottom: 10px; 
+    height: 25px; 
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-contact, .footer-events {
+    visibility: hidden;
+    width: 0px; 
+    height: 0px; 
+  }
+
+  .footer-name {
+    width: 60%; 
+    margin: 0 auto; 
+    padding: 0px; 
   }
 }
 

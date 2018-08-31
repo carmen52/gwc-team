@@ -84,6 +84,9 @@ class Square extends React.Component {
     render() {
       return (
         <div className="App-header">
+          <div id="title-mobile" className="title-mobile header-el" >
+              NU Graduate Women Coders
+          </div>
           <div className="left-header header-el" >
             <img className="logo" src={logo} alt="homepage logo" />
           </div>
