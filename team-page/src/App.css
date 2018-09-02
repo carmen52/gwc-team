@@ -272,14 +272,16 @@ button:hover {
 }
 
 .Carousel-div {
-  width: 1100px;
+  box-sizing: content-box;
+  width: 800px;
   margin: 0 auto; 
+  padding: 30px;
   font-family: 'Ubuntu', sans-serif !important;
   background-color: #c7d2db !important;
 }
 
 .carousel .slide { 
-  height: 700px;
+  height: 530px;
   background-color: #c7d2db;
 }
 
@@ -292,6 +294,10 @@ button:hover {
   border: 3px solid #bf4d28  !important;
 }
 
+.team-photo-text {
+  font-size: 25px; 
+}
+
 @media only screen and (max-width: 1300px) {
   .Person {
     width: 25%; 
@@ -300,11 +306,11 @@ button:hover {
 
 @media only screen and (max-width: 1200px) {
   .Carousel-div {
-    width: 800px;
+    width: 600px;
   }
 
   .carousel .slide { 
-    height: 530px;
+    height: 380px;
   }
 }
 
@@ -323,21 +329,25 @@ button:hover {
   }
 
   .Carousel-div {
-    width: 600px;
+    width: 400px;
   }
 
   .carousel .slide { 
-    height: 380px;
+    height: 260px;
+  }
+
+  .team-photo-text {
+    font-size: 20px; 
   }
 }
 
 @media only screen and (max-width: 700px) {
   .Carousel-div {
-    width: 400px;
+    width: 300px;
   }
 
   .carousel .slide { 
-    height: 250px;
+    height: 190px;
   }
 
   .legend{

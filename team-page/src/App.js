@@ -85,6 +85,9 @@ class App extends Component {
           <Person name="Nada Aladdin Jamel" title="Advisor" pic={jamel} git="" 
                   email="n.naji@northeastern.edu" link=""/>
         </div>
+        <div className="team-cover-text team-photo-text">
+              Team Photos
+          </div>
         <div className="Carousel-div">
           <Carousel showArrows={true}>
               <div>
