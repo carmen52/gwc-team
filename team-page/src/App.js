@@ -33,6 +33,9 @@ import './App.css';
 import './common/header.css';
 import {Header, Footer} from './common/header.js'
 
+import { Carousel } from 'react-responsive-carousel';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -61,17 +64,17 @@ class App extends Component {
         <div className="People">
           <Person name="Victoria Plange" title="President" pic={plange} git="" 
                   email="plange.v@husky.neu.edu" link="https://www.linkedin.com/in/victoria-sarah-plange"/>
-          <Person name="Namrata Bilurkar" title="Vice President" pic={bilurkar} git="" 
+          <Person name="Namrata Bilurkar" title="Vice President" pic={bilurkar} git="https://github.com/namratab94" 
                   email="bilurkar.n@husky.neu.edu" link=" https://www.linkedin.com/in/namratabilurkar"/>
-          <Person name="Anubhuti Vyas" title="Secretary" pic={vyas} git="" 
+          <Person name="Anubhuti Vyas" title="Secretary" pic={vyas} git="https://github.com/anubhutivyas" 
                   email="vyas.an@husky.neu.edu" link="https://www.linkedin.com/in/anubhutivyas/"/>
           <Person name="Sravya Yella" title="Treasurer" pic={yella} git="" 
                   email="yella.sr@husky.neu.edu" link="https://www.linkedin.com/in/sravyayella/"/>
-          <Person name="Dhanisha Phadate" title="Public Relations I" pic={phadate} git="" 
+          <Person name="Dhanisha Phadate" title="Public Relations I" pic={phadate} git="https://github.com/Phadated" 
                   email="phadate.d@husky.neu.edu" link="https://www.linkedin.com/in/dhanisha-phadate"/>
           <Person name="Pujitha Srimameni" title="Public Relations II" pic={sriramaneni} git="" 
                   email="sriramaneni.p@husky.neu.edu" link="https://www.linkedin.com/in/pujitha-sriramaneni/"/>
-          <Person name="Deesha Shah" title="Web Design I" pic={shah} git="" 
+          <Person name="Deesha Shah" title="Web Design I" pic={shah} git="https://github.com/deeshashah" 
                   email="" link="https://www.linkedin.com/in/deeshashah/"/>
           <Person name="Ritika Gupta" title="Web Design II" pic={gupta} git="" 
                   email="gupta.ritika@husky.neu.edu" link="https://www.linkedin.com/in/rtkgupta/"/>
@@ -81,6 +84,34 @@ class App extends Component {
                   email="k.vanderlaan@neu.edu" link=""/>
           <Person name="Nada Aladdin Jamel" title="Advisor" pic={jamel} git="" 
                   email="n.naji@northeastern.edu" link=""/>
+        </div>
+        <div className="Carousel-div">
+          <Carousel showArrows={true}>
+              <div>
+                <img src={require("./carousel-photos/image1.jpg")} />
+                <p className="legend">Organizing Committee Spring 2018 </p>
+              </div>
+              <div>
+                <img src={require("./carousel-photos/image2.jpg")} />
+                <p className="legend">Organizing Committee Fall 2017 </p>
+              </div>
+              <div>
+                <img src={require("./carousel-photos/image3.jpg")} />
+                <p className="legend">Organizing Committee Summer 2017 </p>
+              </div>
+              <div>
+                <img src={require("./carousel-photos/image4.jpg")} />
+                <p className="legend">Organizing Committee Spring 2017 </p>
+              </div>
+              <div>
+                <img src={require("./carousel-photos/image5.png")} />
+                <p className="legend">Organizing Committee Fall 2016 </p>
+              </div>
+              <div>
+                <img src={require("./carousel-photos/image6.jpg")} />
+                <p className="legend">Organizing Committee Summer 2016 </p>
+              </div>
+          </Carousel> 
         </div>
         <Footer/>
       </div>

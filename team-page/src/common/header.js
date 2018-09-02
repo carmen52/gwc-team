@@ -56,29 +56,31 @@ class Square extends React.Component {
     }
   
     onEventsClick() {
-      window.open("http://carmen52.github.io/gwc-events","_self");
+      window.open("http://Grad-Women-Coders.github.io/events","_self");
     }
 
     onGalleryClick() {
-        window.open("http://carmen52.github.io/gwc-gallery","_self");
+        window.open("http://Grad-Women-Coders.github.io/gallery","_self");
     }
   
     onJobPostingsClick() {
+      window.open("http://Grad-Women-Coders.github.io/jobs","_self");
     }
 
     onBlogClick() {
+      window.open("http://Grad-Women-Coders.github.io/blog","_self");
     }
   
     onTeamClick() {
-      window.open("http://carmen52.github.io/gwc-team","_self");
+      window.open("http://Grad-Women-Coders.github.io/team","_self");
     }
   
     onContactClick() {
-      window.open("http://carmen52.github.io/gwc-contact","_self");
+      window.open("http://Grad-Women-Coders.github.io/contact","_self");
     }
 
     onHomeClick() {
-        window.open("http://carmen52.github.io/gwc","_self");
+        window.open("http://Grad-Women-Coders.github.io/","_self");
     }
   
     render() {
